@@ -7,6 +7,66 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+	<form id="form">
+		<h1>Registration Form</h1>
+
+		<div class="form-group">
+			<div>
+				<label for="fullName">Full Name</label>
+				<input type="text" id="fullName" name="fullName" required>
+			</div>
+
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div>
+				<label for="phoneNumber">Phone Number</label>
+				<input type="tel" id="phoneNumber" name="phoneNumber" required>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div>
+				<label for="dateOfBirth">Date of Birth</label>
+				<input type="date" id="dateOfBirth" name="dateOfBirth" required>
+			</div>
+
+			<div>
+				<label for="positionRole">Position/Role</label>
+				<input type="text" id="positionRole" name="positionRole" required>
+			</div>
+
+			<div>
+				<label for="additionalInfo">Additional Information</label>
+				<textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+			</div>
+		</div>
+
+		<div class="radio-group">
+			<h3>Have you attended our events before?</h3>
+			
+			<label class="radio-option">
+				<input type="radio" id="attendedYes" name="attended" value="yes">
+				<p>Yes</p>
+			</label>
+
+			<label class="radio-option">
+				<input type="radio" id="attendedNo" name="attended" value="no" checked>
+				<p>No</p>
+			</label>
+
+			<div class="event-name-group hidden">
+				<label for="eventName">Name the event you attended</label>
+				<input type="text" id="eventName" name="eventName">
+			</div>
+		</div>
+
+		<button type="submit">Submit</button>
+		<button type="reset">Reset</button>
+	</form>
+
 	<script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,48 @@
+#form
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	padding: 45px 25px 20px;
+
+	background-color: #5c5c5cb3;
+
+	box-shadow: 0 10px 10px #32323280;
+	border-radius: 20px;
+}
+
+#form h1
+{
+	grid-column: span 2;
+
+	text-align: center;
+	margin: 0 0 15px 0;
+}
+
+#form button
+{
+	width: 150px;
+	height: 40px;
+
+	margin: 20px auto 0 auto;
+	padding: 5px 10px;
+
+	font-size: 18px;
+	font-weight: 600;
+
+	color: #f8f9fa;
+	background-color: #141414;
+
+	border: none;
+	border-radius: 10px;
+
+	cursor: pointer;
+}
+
+#form button:hover
+{
+	background-color: #f8f9fa;
+	color: #141414;
+
+	transition: all 0.3s ease-in-out;
+}
